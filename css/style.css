@@ -37,6 +37,26 @@ a:hover {
   color: var(--primary) !important;
 }
 
+.modal-header{
+
+  border: none !important;
+
+}
+
+.modal-body h5{
+
+  color: var(--text-dark);
+  text-align: center;
+
+}
+
+.modal-content{
+
+  background-color: var(--primary) !important;
+
+}
+
+
 .custom-btn {
   background-color: var(--primary);
   color: var(--text-dark) !important;
@@ -462,3 +482,5 @@ footer {
 .roadmap-list img {
   width: 20px;
 }
+
+

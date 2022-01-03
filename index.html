@@ -48,12 +48,12 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#tokenomics">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#feature">Scamlist</a>
+                            <a class="nav-link" href="#scamlist">Scamlist</a>
                         </li>
 
 
@@ -65,7 +65,7 @@
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">Whitpaper</a>
+                            <a class="nav-link" href="./vendor/Scamtoken-Whitepaper.pdf" target="_blank">Whitpaper</a>
                         </li>
 
 
@@ -125,7 +125,7 @@
                             <a href="https://scamtoken.app/" target="_blank" class="custom-btn">Connect Wallet <i
                                     class="fas fa fa-arrow-right"></i></a>
 
-                            <a href="#" class="custom-tp">Read Whitepaper</a>
+                            <a href="./vendor/Scamtoken-Whitepaper.pdf" target="_blank" class="custom-tp">Read Whitepaper</a>
 
                         </div>
 
@@ -224,7 +224,7 @@
 
 
 
-        <section class="section-padding section-bg">
+        <section class="section-padding section-bg" id="about">
 
             <div class="container">
 
@@ -254,7 +254,7 @@
         </section>
 
 
-        <section class="section-padding">
+        <section class="section-padding" id="scamlist">
 
             <div class="container">
 
@@ -271,9 +271,28 @@
                             cryptocurrency you like to see if it really isn’t a scam.</p>
 
                         <div class="my-5">
-                            <a href="#" class="custom-btn">Scamlist available soon</a>
+
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="custom-btn">Scamlist available soon</a>
+
                         </div>
+                            
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5>Scamlist will be available soon :)</h5>
+                                        </div>
+                                    
+                                    </div>
+                                    </div>
+                                </div>
                     </div>
+                   
 
                     <div class="col-lg-6 text-center order-xs-1">
 
@@ -315,7 +334,7 @@
                                 <ul>
                                     <li><a href="https://www.reddit.com/r/Scamlist_Crypto/" target="_blank"><img
                                                 src="images/reddit.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/telegram.png" alt=""></a></li>
+                                    <li><a href="https://t.me/+f9qaTd2pW-Q0NTE0" target="_blank"><img src="images/telegram.png" alt=""></a></li>
                                     <li><a href="https://twitter.com/Scamlist_Crypto" target="_blank"><img
                                                 src="images/twitter.png" alt=""></a></li>
 
@@ -360,7 +379,7 @@
                                     <li><a href="https://pancakeswap.finance/swap?outputCurrency=0xc95cb30defb75a15cdb1cc47ef80d9a816d7509f"
                                             target="_blank"><img src="images/pancakeswap-cake-seeklogo.com 1.png"
                                                 alt=""></a></li>
-                                    <li><a href="#" class="custom-btn">How To Buy</a></li>
+                                    <li><a href="./vendor/howtobuy.pdf" target="_blank" class="custom-btn">How To Buy</a></li>
                                 </ul>
 
 
@@ -591,7 +610,7 @@
                             to the token price and the quantity of new contributions. </p>
 
                         <div class="my-5">
-                            <a href="#" class="custom-btn">Explore Whitpaper</a>
+                            <a href="./vendor/Scamtoken-Whitepaper.pdf" target="_blank"class="custom-btn">Explore Whitpaper</a>
                         </div>
                     </div>
 
@@ -656,7 +675,7 @@
                             researcher will be introduced to the database. More infos about that in the whitepaper.</p>
 
                         <div class="my-5">
-                            <a href="#" class="custom-btn">Explore Whitpaper</a>
+                            <a href="./vendor/Scamtoken-Whitepaper.pdf" target="_blank" class="custom-btn">Explore Whitpaper</a>
                         </div>
                     </div>
 
@@ -686,7 +705,7 @@
                             to the whole system. For now the only published language is in english. </p>
 
                         <div class="my-5">
-                            <a href="#" class="custom-btn">Explore Whitpaper</a>
+                            <a href="./vendor/Scamtoken-Whitepaper.pdf" class="custom-btn">Explore Whitpaper</a>
                         </div>
                     </div>
 
@@ -769,7 +788,7 @@
                                                 alt=""></a></li>
                                     <li><a href="https://www.reddit.com/r/Scamlist_Crypto/" target="_blank"><img
                                                 src="images/reddit.png" alt=""></a></li>
-                                    <li><a href="#" target="_blank"><img src="images/telegram.png" alt=""></a></li>
+                                    <li><a href="https://t.me/+f9qaTd2pW-Q0NTE0" target="_blank"><img src="images/telegram.png" alt=""></a></li>
                                     <li><a href="https://twitter.com/Scamlist_Crypto" target="_blank"><img
                                                 src="images/twitter.png" alt=""></a></li>
 
@@ -788,10 +807,10 @@
 
                         <ul class="footer-menu">
 
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Scamlist</a></li>
+                            <li><a href="#index">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#scamlist">Scamlist</a></li>
 
                         </ul>
 
@@ -803,7 +822,7 @@
 
                         <ul class="footer-menu">
 
-                            <li><a href="#">Download Whitepaper</a></li>
+                            <li><a href="./vendor/Scamtoken-Whitepaper.pdf" target="_blank">Download Whitepaper</a></li>
                             <li><a href="#">Blockchain Explorer</a></li>
 
 
