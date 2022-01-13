@@ -468,7 +468,7 @@ footer {
 }
 
 .roadmap img {
-  width: 50px;
+  width: 190px;
 }
 
 .roadmap-list {
@@ -477,3 +477,106 @@ footer {
 .roadmap-list img {
   width: 20px;
 }
+
+/* NEW HEADER */
+
+.sidenav .closebtn {
+  padding: 15px 30px !important;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding-top: 80px;
+}
+
+.sidenav .menu-list {
+  padding: 0;
+}
+
+.sidenav .menu-list li {
+  padding: 0.7rem 8px 0.7rem 3rem;
+}
+
+.sidenav .menu-list a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #0095f1;
+  display: inline;
+  transition: 0.3s;
+  position: relative;
+}
+
+.sidenav .menu-list .menu-dropdown {
+  display: none;
+}
+
+.sidenav .menu-list .menu-dropdown a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.sidenav .menu-list .menu-dropdown li {
+  padding: 0.7rem 8px 0.7rem 1rem;
+}
+
+.sidenav .menu-list a:after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #0095f1;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s ease-in;
+}
+
+.sidenav .menu-list a :hover {
+  transform: translateX(10px);
+}
+.sidenav .menu-list a:hover:not(.menu-dropdown a)::after {
+  width: 100%;
+}
+
+.sidenav .menu-list .menu-dropdown a:hover {
+  font-weight: 800;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  padding-top: 15px;
+  font-size: 36px;
+}
+
+.open-btn {
+  padding: 15px 30px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.open-btn span {
+  color: var(--text);
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* NEW HEADER */

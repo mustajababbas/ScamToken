@@ -13,7 +13,7 @@
             $('.connectMetaMask').hide();
             $('body').prepend(`<div style="font-size: 12px;text-align: center;color:#000;position: relative;top: 0px;z-index: 3;right: 0;width: 100%;background-color: #ffb400;padding: 5px 10px;">${checkAccount[0]}</div>`)
             clearInterval(checkWalletConnection);
-            $('[id="connect-wallet"]').text('Connected');
+            $("#connect-wallet").text('Connected');
             
         }
     }
