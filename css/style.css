@@ -3,6 +3,7 @@
   --secondary: #0d0d2b;
   --text-dark: #000;
   --text: #fff;
+  --borders:#ffffff30;
 }
 
 body {
@@ -10,10 +11,25 @@ body {
   font-family: "Montserrat", sans-serif !important;
 }
 
+.wallet-body{
+  background-color: var(--text-dark) !important;
+
+}
+
 .main {
   background: url(../images/background.png) !important;
   background-position: center;
   background-size: cover;
+
+}
+
+.wallet-main{
+
+  background: url(../images/wallet-background.png) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
 }
 
 h1,
@@ -27,6 +43,19 @@ h6 {
 
 p {
   color: var(--text);
+}
+
+.f-bold{
+
+  font-weight: 500;
+
+}
+
+.yellow
+{
+
+  color: var(--primary);
+
 }
 
 img {
@@ -123,6 +152,12 @@ a:hover {
 
 .logo {
   width: 300px;
+}
+
+.wallet-logo{
+
+  width: 200px;
+
 }
 
 .nav-custom {
@@ -498,8 +533,12 @@ footer {
   flex-direction: column;
   -webkit-flex-direction: column;
   justify-content: flex-start;
-  background-color: #fff;
   padding-top: 80px;
+  background: rgba(0, 0, 0, 0.64);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-sizing: border-box;
+  backdrop-filter: blur(50px);
+
 }
 
 .sidenav .menu-list {
@@ -507,37 +546,37 @@ footer {
 }
 
 .sidenav .menu-list li {
-  padding: 0.7rem 8px 0.7rem 3rem;
+  padding: 0.7rem 8px 0.7rem 1rem;
+  border-top: 1px solid var(--borders);
+  border-bottom: 1px solid var(--borders);
+
+  
 }
 
 .sidenav .menu-list a {
   text-decoration: none;
-  font-size: 20px;
-  color: #0095f1;
+  font-size: 18px;
+  color: var(--text);
   display: inline;
   transition: 0.3s;
   position: relative;
 }
 
-.sidenav .menu-list .menu-dropdown {
-  display: none;
+.sidenav .menu-list i {
+
+  margin-right: 7px;
+
 }
 
-.sidenav .menu-list .menu-dropdown a {
-  text-decoration: none;
-  font-size: 15px;
-}
 
-.sidenav .menu-list .menu-dropdown li {
-  padding: 0.7rem 8px 0.7rem 1rem;
-}
+
 
 .sidenav .menu-list a:after {
   position: absolute;
   content: "";
   width: 0%;
   height: 2px;
-  background: #0095f1;
+  background: var(--primary);
   left: 0;
   bottom: -5px;
   transition: all 0.3s ease-in;
@@ -557,19 +596,26 @@ footer {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
+  right: 0;
   padding-top: 15px;
   font-size: 36px;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .open-btn {
-  padding: 15px 30px;
-  background-color: transparent;
+  padding: 10px 30px;
+  background: url(../images/wallet-background.png) !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid var(--borders);
 }
 
 .open-btn span {
@@ -580,3 +626,124 @@ footer {
 }
 
 /* NEW HEADER */
+
+
+.account-balance{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--borders);
+  padding: 20px 0;
+
+
+}
+
+.account-balance img{
+
+width: 20px;
+margin-right: 10px;
+
+}
+
+ .wallet-section{
+
+ height:100vh
+
+} 
+
+
+.main-wallet{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.main-wallet img{
+
+  width: 350px;
+
+}
+
+.main-wallet a{
+
+ margin: 40px 0;
+
+}
+
+.sidenav-footer{
+
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.sidenav-social ul{
+
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+
+.sidenav-social img{
+
+  width: 40px;
+    height: 40px;
+    background: linear-gradient( 105.61deg, rgba(255, 255, 255, 0.17) 0%, rgba(255, 255, 255, 0.102) 100% );
+    border-radius: 5px;
+    padding: 7px;
+
+
+}
+
+.wallet-hash{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+
+}
+
+.wallet-hash p,.wallet-balance p,.account-balance p{
+
+  margin: 0;
+
+}
+
+
+
+.wallet-balance{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border: 1px solid var(--borders);
+  border-bottom: 6px solid var(--primary);
+  padding: 20px 10px;
+
+}
+
+.wallet-balance p span{
+
+ font-size: 12px;
+
+}
+
+#wallet-details,#account-balance{
+
+  display: none;
+
+}

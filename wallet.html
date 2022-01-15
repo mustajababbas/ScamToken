@@ -18,45 +18,73 @@
     <title>Wallet</title>
 </head>
 
-<body>
+<body class="wallet-body">
 
 
 
     <div id="mySidenav" class="sidenav">
+
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
         <ul class="menu-list">
+
+
             <li>
-                <a href="#" class="menu-link">About us</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-house"></i> Home</a>
             </li>
 
             <li>
 
-                <a href="#" class="menu-link">Our Team</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-bars"></i> Scamlist</a>
 
             </li>
 
             <li>
 
-                <a href="#" class="menu-link">Services</a>
+                <a href="#" class="menu-link"><i class="fa-solid fa-house"></i> Contribution</a>
 
             </li>
 
-            <li>
-
-                <a href="#" class="menu-link">Pateint Portal</a>
-
-            </li>
-
-
+            
 
 
         </ul>
 
+        <div class="sidenav-footer">
+
+            <a href="./vendor/howtobuy.pdf" target="_blank" class="custom-btn">How To Buy?</a>
+
+
+                <div class="sidenav-social">
+
+                    <ul>
+
+                        <li><a href="https://poocoin.app/tokens/0xc95cb30defb75a15cdb1cc47ef80d9a816d7509f"
+                                target="_blank"> <img src="images/PooCoin (POOCOIN) 1.png" alt=""> </a></li>
+                        <li><a href="https://pancakeswap.finance/swap?outputCurrency=0xc95cb30defb75a15cdb1cc47ef80d9a816d7509f"
+                                target="_blank"><img src="images/pancakeswap-cake-seeklogo.com 1.png"
+                                    alt=""></a></li>
+                        <li><a href="https://www.reddit.com/r/Scamlist_Crypto/" target="_blank"><img
+                                    src="images/reddit.png" alt=""></a></li>
+                        <li><a href="https://t.me/+f9qaTd2pW-Q0NTE0" target="_blank"><img
+                                    src="images/telegram.png" alt=""></a></li>
+                        <li><a href="https://twitter.com/Scamlist_Crypto" target="_blank"><img
+                                    src="images/twitter.png" alt=""></a></li>
+
+                    </ul>
+
+
+                </div>
+
+        </div>
+
 
     </div>
 
+<div class="wallet-main">
+
     <div class="open-btn">
+
         <span onclick="openNav()" id="open-btn-hide">
             <i class="fa fa-bars"></i>
         </span>
@@ -64,7 +92,7 @@
 
         <div>
 
-            <img src="images/logo.png" class="logo">
+           <a href="./index.html"> <img src="images/logo.png" class="wallet-logo"></a>
 
         </div>
 
@@ -73,20 +101,105 @@
 
 
 
-            <span id="search-icon">
-                <span class="hidden-span">Search &nbsp; </span>
-                <i class="fa fa-search"></i>
-            </span>
+            <a href="javascript:void(0)" class="custom-btn m-0" id="connect-wallet" onclick="loadWeb3()">Connect</a>
 
         </div>
 
     </div>
+
+    <div  id="account-balance">
+
+        <span class="account-balance">
+
+        <img src="./images/wallet.png">
+        <p>0.00 ($0.00)</p>
+
+    </span>
+
+    </div>
+
+
+ 
+
+        
+
+        
+        <section class="wallet-section" id="wallet-section">
+              
+            <div class="container h-100">
+
+            <div id="wallet-details">
+
+                <div class="wallet-hash">
+
+                        <p class="f-bold">
+
+                            Wallet
+
+                        </p>
+
+                        <p class="f-bold yellow" id="address">
+
+                            
+
+                        </p>
+
+                </div>
+
+                <div class="wallet-balance">
+
+                    <p class="f-bold">
+
+                        <img src="images/wallet.png" alt="">
+
+                    </p>
+
+                   
+
+                    <p class="f-bold">
+                        0.00 
+                        <span class="yellow">($0.00)</span>
+                    </p>
+
+                  
+
+                </div>
+
+
+                <div class="d-flex justify-content-end my-4">
+
+                    <a href="#" class="custom-btn" bis_skin_checked="1">Buy ScamToken</a>
+
+                </div>
+
+            </div>
+
+                <div class="main-wallet">
+                        <img src="images/Group.png">
+                        <a href="javascript:void(0)" class="custom-btn" id="connect-wallet" onclick="loadWeb3()">Connect Wallet</a>
+                </div>
+
+
+            </div>
+              
+           
+        </section>
+        
+
+
+
+
+    
+
+</div>
 
 
     <script src="vendor/jquery.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/web3@1.2.11/dist/web3.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.0/dist/index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
 
 
     <script>

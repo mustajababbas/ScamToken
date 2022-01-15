@@ -10,6 +10,12 @@
 
   }
 
+.wallet-logo{
+
+    width: 100px;
+
+}
+
 .nav-item{
 
   padding: 10px 0;
@@ -163,6 +169,32 @@ font-size: 12px;
 
 }
 
+
+.open-btn{
+
+  padding: 10px 20px;
+
+}
+
+.main-wallet img{
+
+  width: 250px;
+
+}
+
+.wallet-hash{
+
+  flex-direction: column;
+
+}
+
+.wallet-hash p{
+
+  flex-direction: column;
+  overflow-wrap: anywhere;
+  text-align: center;
+}
+
 }
 
 @media (min-width:768px){
@@ -216,6 +248,12 @@ font-size: 12px;
 
   right: 0;
  
+}
+
+.custom-tp, .custom-btn {
+  font-size: 12px;
+  padding: 10px 12px;
+
 }
 
 }
