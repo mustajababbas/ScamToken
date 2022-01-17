@@ -66,6 +66,13 @@ a:hover {
   color: var(--primary) !important;
 }
 
+.disable{
+    
+     pointer-events: none;
+     cursor: not-allowed;
+    
+}
+
 .modal-header {
   border: none !important;
 }
@@ -648,7 +655,8 @@ margin-right: 10px;
 
  .wallet-section{
 
- height:100vh
+ height:100vh;
+     margin-top: 2rem;
 
 } 
 

@@ -331,6 +331,13 @@ font-size: 12px;
     
     }
     
+    
+    .main-wallet img{
+        
+        width: 250px;
+        
+    }
+    
 }
 
 
@@ -342,6 +349,12 @@ font-size: 12px;
     margin-bottom: 10px;
   
   }
+     
+    .main-wallet img{
+        
+        width: 250px;
+        
+    }
 
 
 }
